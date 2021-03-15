@@ -1,0 +1,8 @@
+- name: do tasks
+  hosts: all
+  gather_facts: no
+  become: yes
+  vars:
+    awx: ''
+  tasks:
+    - find.yml 

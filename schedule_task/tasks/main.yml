@@ -1,8 +1,3 @@
 ---
 # tasks file for schedule_task
 
-- name: 'kafka task 1'
-  cron:
-    name: "kafka logrotate2"
-    minute: "50"
-    job: 'find /var/log/kafka/ -path "/var/log/kafka/kafka.log.*" -mtime +7 -print -exec rm -f {} \; > /dev/null'
