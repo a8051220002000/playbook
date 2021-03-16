@@ -3,6 +3,7 @@
   gather_facts: no
   become: yes
   vars:
-    awx: ''
+    - awx: ''
   tasks:
-    - find.yml 
+  roles:
+    - cronjob
