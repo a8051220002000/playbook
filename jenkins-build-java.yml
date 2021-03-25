@@ -1,7 +1,0 @@
----
-- hosts: client
-  gather_facts: false
-  tasks:
-#執行遠端tomcat 備份；搬移；移除；重啟
-   - script:  /var/lib/jenkins/shell/lottery_tomcat_build.sh
-
